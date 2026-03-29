@@ -144,7 +144,7 @@
             left: 0;
             right: 0;
             z-index: 500;
-            padding: 12px 28px 0;
+            padding: 16px 52px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -159,8 +159,8 @@
         }
 
         .nav-left .n1 {
-            font-size: .62rem;
-            letter-spacing: 2px;
+            font-size: .58rem;
+            letter-spacing: 3px;
             color: var(--gold);
             text-transform: uppercase;
             font-family: 'Space Mono', monospace;
@@ -168,14 +168,14 @@
         }
 
         .nav-left .n2 {
-            font-size: .98rem;
+            font-size: .92rem;
             font-weight: 800;
             letter-spacing: .3px
         }
 
         .nav-star {
-            width: 55px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             background: var(--red);
             border-radius: 50%;
             display: flex;
@@ -200,7 +200,7 @@
 
         .nav-right {
             font-family: 'Space Mono', monospace;
-            font-size: .76rem;
+            font-size: .62rem;
             letter-spacing: 2px;
             color: var(--muted);
             text-align: right
@@ -226,8 +226,7 @@
         /* floating label — small, uppercase, monospace */
         .label {
             font-family: 'Space Mono', monospace;
-            font-size: .8rem;
-            font-weight: bold;
+            font-size: .6rem;
             letter-spacing: 5px;
             text-transform: uppercase;
             opacity: .6;
@@ -282,7 +281,7 @@
             border-radius: 100px;
             font-size: .72rem;
             font-weight: 700;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             color: var(--gold);
             text-transform: uppercase;
             background: rgba(232, 201, 106, .06);
@@ -324,19 +323,19 @@
    S1 — HERO (computer floating, text scattered)
 ═══════════════════════════════════════════ */
         #s1 {
-            min-height: 20vh;
-            padding-top: 10px;
+            min-height: 100vh;
+            padding-top: 90px;
             overflow: hidden;
         }
 
         .s1-inner {
             position: relative;
-            width: 90%;
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             min-height: 100vh;
-            display: flex;
-            /* grid-template-columns: 1fr 1fr; */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             align-items: center;
             gap: 40px;
         }
@@ -344,10 +343,8 @@
         /* Text column */
         .s1-text {
             position: relative;
-            z-index: 2;
+            z-index: 3;
             padding: 40px 0;
-
-            width: 130%;
         }
 
         .s1-eyebrow {
@@ -364,13 +361,12 @@
             font-size: clamp(2.4rem, 5.5vw, 5rem);
             font-weight: 900;
             line-height: .95;
-            letter-spacing: 2px;
+            letter-spacing: -2px;
             margin-bottom: 24px;
         }
 
         .s1-title .t-line {
-            display: block;
-            padding: 12px 0;
+            display: block
         }
 
         .s1-title .t-gold {
@@ -610,21 +606,21 @@
    S2 — THƯ MỜI (editorial: moon left, text right scattered)
 ═══════════════════════════════════════════ */
         #s2 {
-            min-height: 20vh;
+            min-height: 120vh;
             padding: 0 52px;
             overflow: hidden;
         }
 
         .s2-inner {
             position: relative;
-            width: 90%;
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            min-height: 90vh;
-            display: flex;
-            /* grid-template-columns: 1fr 1fr; */
+            min-height: 120vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             align-items: center;
-            gap: 40px;
+            gap: 60px;
         }
 
         .s2-moon {
@@ -763,9 +759,8 @@
 
         .s2-kicker {
             font-family: 'Space Mono', monospace;
-            font-size: .70rem;
-            font-weight: bold;
-            letter-spacing: 3px;
+            font-size: .58rem;
+            letter-spacing: 4px;
             color: var(--gold);
             text-transform: uppercase;
             margin-bottom: 10px;
@@ -975,7 +970,7 @@
             font-size: clamp(2.5rem, 5.5vw, 5rem);
             font-weight: 900;
             letter-spacing: -2px;
-            line-height: 1.1;
+            line-height: 1
         }
 
         .s4-hl span {
@@ -1151,7 +1146,7 @@
             backdrop-filter: blur(8px);
             border-radius: 5px;
             font-size: .85rem;
-            font-weight: 500;
+            font-weight: 600;
             line-height: 1.55;
             color: rgba(240, 246, 255, .68);
             transition: all .3s
@@ -1234,7 +1229,7 @@
             display: flex;
             gap: 32px;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-start
         }
 
         .lego-wrap {
@@ -1263,7 +1258,7 @@
 
         .lego-card {
             position: relative;
-            width: 240px
+            width: 210px
         }
 
         .lego-svg-el {
@@ -1465,6 +1460,50 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- COMPUTER -->
+                <div class="s1-visual sr-r" style="transition-delay:.15s">
+                    <div class="computer-wrap">
+                        <svg class="computer-svg" viewBox="0 0 680 500" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="32" y="16" width="616" height="376" rx="18" fill="#0b1828" stroke="#1e3a58"
+                                stroke-width="2.5" />
+                            <rect x="44" y="28" width="592" height="352" rx="11" fill="#020810" />
+                            <rect x="44" y="28" width="592" height="352" rx="11" fill="none"
+                                stroke="rgba(232,201,106,.1)" stroke-width="1" />
+                            <path d="M44 48 L44 28 L64 28" stroke="rgba(232,201,106,.5)" stroke-width="2" fill="none" />
+                            <path d="M636 48 L636 28 L616 28" stroke="rgba(232,201,106,.5)" stroke-width="2"
+                                fill="none" />
+                            <path d="M44 360 L44 380 L64 380" stroke="rgba(232,201,106,.5)" stroke-width="2"
+                                fill="none" />
+                            <path d="M636 360 L636 380 L616 380" stroke="rgba(232,201,106,.5)" stroke-width="2"
+                                fill="none" />
+                            <circle cx="340" cy="394" r="4" fill="#00e5f5" opacity=".5" />
+                            <rect x="300" y="396" width="80" height="44" rx="5" fill="#0b1828" stroke="#1e3a58"
+                                stroke-width="1.5" />
+                            <rect x="180" y="438" width="320" height="22" rx="11" fill="#0b1828" stroke="#1e3a58"
+                                stroke-width="1.5" />
+                            <rect x="148" y="464" width="384" height="26" rx="6" fill="#0a1525" stroke="#1e3a58"
+                                stroke-width="1.5" />
+                        </svg>
+                        <div class="screen-inner">
+                            <div class="screen-topbar">
+                                <div><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                                </div>
+                                <span>THU_MOI_DAIHOI_X.vn</span>
+                                <span>22/08/2026</span>
+                            </div>
+                            <div class="screen-body">
+                                <div class="sb-badge">⭐</div>
+                                <p class="sb-org">Đoàn Khoa CNTT · ĐHNT</p>
+                                <p class="sb-invite">Trân trọng kính mời</p>
+                                <p class="sb-guest">BAN CHỦ NHIỆM KHOA CNTT</p>
+                                <h2 class="sb-title">ĐẠI HỘI<br>ĐẠI BIỂU</h2>
+                                <div class="sb-edition">Lần Thứ X · 2024–2025<span class="blink"></span></div>
+                            </div>
+                            <div class="scanline"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -1478,7 +1517,59 @@
             <div class="s2-inner">
 
                 <!-- MOON -->
-
+                <div class="s2-moon sr-l">
+                    <svg class="moon-svg" viewBox="0 0 560 560" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="mG" cx="36%" cy="32%" r="68%">
+                                <stop offset="0%" stop-color="#2a2050" />
+                                <stop offset="50%" stop-color="#120c30" />
+                                <stop offset="100%" stop-color="#04020e" />
+                            </radialGradient>
+                            <radialGradient id="cG" cx="50%" cy="40%" r="50%">
+                                <stop offset="0%" stop-color="rgba(0,0,0,.4)" />
+                                <stop offset="100%" stop-color="transparent" />
+                            </radialGradient>
+                        </defs>
+                        <circle cx="280" cy="280" r="265" fill="url(#mG)" />
+                        <circle cx="165" cy="190" r="40" fill="url(#cG)" stroke="rgba(232,201,106,.12)"
+                            stroke-width="1.5" />
+                        <circle cx="378" cy="165" r="26" fill="url(#cG)" stroke="rgba(232,201,106,.1)"
+                            stroke-width="1" />
+                        <circle cx="185" cy="368" r="20" fill="url(#cG)" stroke="rgba(232,201,106,.1)"
+                            stroke-width="1" />
+                        <circle cx="418" cy="352" r="33" fill="url(#cG)" stroke="rgba(232,201,106,.12)"
+                            stroke-width="1.5" />
+                        <circle cx="302" cy="430" r="16" fill="url(#cG)" stroke="rgba(232,201,106,.08)"
+                            stroke-width="1" />
+                        <ellipse cx="215" cy="165" rx="72" ry="48" fill="rgba(232,201,106,.04)"
+                            transform="rotate(-18,215,165)" />
+                        <circle cx="280" cy="280" r="265" fill="none" stroke="rgba(232,201,106,.16)"
+                            stroke-width="1.5" />
+                        <circle cx="280" cy="280" r="272" fill="none" stroke="rgba(232,201,106,.05)" stroke-width="5" />
+                    </svg>
+                    <div class="moon-content">
+                        <p class="mc-tag">— Thư Mời —</p>
+                        <p class="mc-main-title">BCH Đoàn Khoa CNTT<br>kính mời<br><span style="color:var(--gold)">Ban
+                                Chủ Nhiệm Khoa</span></p>
+                        <div class="mc-divider"><span>✦</span></div>
+                        <div class="mc-grid">
+                            <div class="mc-box">
+                                <div class="mc-box-l">🕐 Thời gian</div>
+                                <div class="mc-box-v">17h45<br>22/08/2026</div>
+                            </div>
+                            <div class="mc-box">
+                                <div class="mc-box-l">📍 Địa điểm</div>
+                                <div class="mc-box-v">Lầu 9<br>CS 331 Q.12</div>
+                            </div>
+                        </div>
+                        <div class="mc-divider"><span>✦</span></div>
+                        <div class="mc-sign">
+                            <strong>TP.HCM, 25/08/2024</strong><br>
+                            TM. BCH Đoàn Khoa · Phó Bí Thư<br>
+                            <span style="font-style:italic;color:var(--gold)">(Đã ký) — Tống Phước Thiện</span>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- SCATTERED TEXT RIGHT -->
                 <div class="s2-text">
@@ -1509,6 +1600,72 @@
         </section>
 
         <div class="divider"></div>
+
+        <!-- ════════════════════════════════════════
+     HORIZONTAL SCROLL — câu kính mời lớn
+════════════════════════════════════════ -->
+        <div id="hscrollWrapper">
+            <section id="hscroll">
+                <div class="hscroll-pin" id="hscrollPin">
+                    <div class="hs-label">Cuộn để đọc →</div>
+
+                    <!-- Astronaut -->
+                    <div id="hAstro">
+                        <svg viewBox="0 0 90 110" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="45" cy="62" rx="21" ry="25" fill="#c4d4e8" stroke="#9ab0c8"
+                                stroke-width="1.5" />
+                            <circle cx="45" cy="33" r="19" fill="#ddeeff" stroke="#9ac0de" stroke-width="2" />
+                            <ellipse cx="45" cy="31" rx="12" ry="10.5" fill="#18386a" opacity=".92" />
+                            <ellipse cx="41" cy="28" rx="3.5" ry="2.8" fill="rgba(0,229,245,.42)" />
+                            <ellipse cx="26" cy="62" rx="6.5" ry="13" fill="#c4d4e8" stroke="#9ab0c8" stroke-width="1.5"
+                                transform="rotate(-10,26,62)" />
+                            <ellipse cx="64" cy="62" rx="6.5" ry="13" fill="#c4d4e8" stroke="#9ab0c8" stroke-width="1.5"
+                                transform="rotate(10,64,62)" />
+                            <circle cx="20" cy="73" r="5.5" fill="#9ab0c8" />
+                            <circle cx="70" cy="73" r="5.5" fill="#9ab0c8" />
+                            <ellipse cx="37" cy="84" rx="7.5" ry="9.5" fill="#adc0d0" />
+                            <ellipse cx="53" cy="84" rx="7.5" ry="9.5" fill="#adc0d0" />
+                            <ellipse cx="36" cy="92" rx="9.5" ry="4.5" fill="#607080" />
+                            <ellipse cx="54" cy="92" rx="9.5" ry="4.5" fill="#607080" />
+                            <rect x="37" y="55" width="15" height="10" rx="2" fill="#081e3e" opacity=".8" />
+                            <circle cx="41" cy="60" r="1.8" fill="#00e5f5" opacity=".8" />
+                            <circle cx="49" cy="60" r="1.8" fill="#e8c96a" opacity=".8" />
+                            <rect x="33" y="55" width="7" height="14" rx="3" fill="#607888" />
+                            <circle cx="36" cy="70" r="2.5" fill="rgba(0,229,245,.65)" />
+                        </svg>
+                    </div>
+
+                    <div class="hs-track" id="hsTrack">
+                        <span class="hw c3">Sự</span>
+                        <span class="hw c3">hiện diện</span>
+                        <span class="hw c3">của</span>
+                        <span class="hw c3">quý vị</span>
+                        <span class="hw c3">là</span>
+                        <span class="hw c3">niềm</span>
+                        <span class="hw c3">vinh dự</span>
+                        <span class="hw sep">·</span>
+                        <span class="hw c3">của</span>
+                        <span class="hw c3">chúng tôi</span>
+                        <span class="hw sep">✦</span>
+                        <span class="hw c3">Hân hạnh</span>
+                        <span class="hw c3">và</span>
+                        <span class="hw c3">mong chờ</span>
+                        <span class="hw c3">được đón tiếp</span>
+                        <span class="hw sep">·</span>
+                        <span class="hw c3" style="font-size:clamp(3rem,7vw,6.5rem)">Trân trọng!</span>
+                    </div>
+
+                    <div class="hs-hint">
+                        <span class="hs-arr">→</span>
+                        <span>Cuộn để khám phá</span>
+                        <span class="hs-arr">→</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="divider"></div>
+
         <!-- ════════════════════════════════════════
      S4 — CHƯƠNG TRÌNH (rocket timeline, full width)
 ════════════════════════════════════════ -->
@@ -1701,7 +1858,7 @@
                             <div class="tl-dot"></div><span class="tl-n">18</span>
                         </div>
                         <div class="tl-r">
-                            <div class="tl-card">Bầu Đoàn Đại biểu tham dự Đại hội TNCS Trường ĐHNTT – Lần IX</div>
+                            <div class="tl-card">Bầu Đoàn Đại biểu tham dự Đại hội TNCS Trường ĐHNT – Lần IX</div>
                         </div>
                     </div>
                     <div class="tl-item">
